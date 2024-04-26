@@ -1,0 +1,27 @@
+﻿@page
+@model FANCY_CLOTHES_MANAGEMENT.Pages.AddBrandModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Brand</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <br> <br> <br>
+    <div class="container">
+        <h3>Create Your New Brand Category</h3>
+        <form method="post">
+            <div class="form-group">
+                <label for="brandName">Brand Name:</label>
+                <input type="text" class="form-control" id="brandName" name="BrandName" placeholder="Enter brand name" required>
+            </div>
+            <div class="form-group">
+                <label for="imageUrl">Brand Image URL:</label>
+                <input type="url" class="form-control" id="imageUrl" name="ImageUrl" placeholder="Enter brand image URL" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

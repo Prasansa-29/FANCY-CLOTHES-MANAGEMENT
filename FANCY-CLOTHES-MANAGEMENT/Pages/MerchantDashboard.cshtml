@@ -1,0 +1,123 @@
+﻿@page
+@model FANCY_CLOTHES_MANAGEMENT.Pages.MerchantDashboardModel
+@{
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchant Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #000;
+        }
+
+        .side-panel {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <li class=" nav-item-dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+            Merchant User
+        </a>
+        <ul class="dropdown-menu">
+            <li> <a class="dropdown-item" asp-area="Identity" asp-page=" /Account/Manage/Index">Profile</a> </li>
+            <li> <hr class="dropdown-divider"> </li>
+            <li>  <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Logout">Logout</a>  </li>
+        </ul>
+    </li>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Merchant Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Profile
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Edit Profile</a>
+                        <a class="dropdown-item" href="#">Change Password</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/Index">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Side Panel -->
+            <div class="col-lg-2 bg-light side-panel">
+                <ul class="list-group">
+                    <li class="list-group-item"> <a href=""> Create new Brand List </a> </li>
+                    <li class="list-group-item"> <a href=""> Add products to your Brand List </a> </li>
+                    <li class="list-group-item"><a href="">  View Products</a></li>
+                    <li class="list-group-item"><a href=""> Products Sold </a> </li>
+                    <li class="list-group-item"><a href=""> Products to be Delivered</a></li>
+                    <li class="list-group-item"><a href="">View CustomerList</a></li>
+                    <li class="list-group-item"><a href="">View Orders</a></li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="col-lg-8">
+                <!-- Advertisement -->
+                <div class="jumbotron">
+                    <h1 class="display-4">Advertisements</h1>
+                    <p class="lead"> Discover your Latest Personalities</p>
+                    <div class="row">
+                        
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <img src="https://static3.azafashions.com/tr:w-317/uploads/product_gallery/1-0992504001673433787.jpg?noopt=true" class="card-img-top" alt="Advertisement 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Today's Latest News</h5>
+                                    <p class="card-text">Saree has always been the best ornament, a lady can wear.</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <img src="https://images.pexels.com/photos/13602681/pexels-photo-13602681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Advertisement 2">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Gowns are underrated</h5>
+                                    <p class="card-text">A vibe that you always want in your life.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Bootstrap JS and jQuery -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+﻿@page
+@model FANCY_CLOTHES_MANAGEMENT.Pages.ToDeliverModel
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products to be Delivered</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+            border-bottom: none;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .card-text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Products to be Delivered</h1>
+        @if (Model.Products.Any())
+        {
+            @foreach (var product in Model.Products)
+            {
+                <div class="card">
+                    <div class="card-header">
+                        @product.ProductName
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@product.ProductName</h5>
+                        <p class="card-text"><strong>Price:</strong> $@product.Price</p>
+                        <p class="card-text"><strong>Quantity:</strong> @product.Quantity</p>
+                        <p class="card-text"><strong>Size:</strong> @product.Size</p>
+                        <p class="card-text"><strong>Color:</strong> @product.Color</p>
+                        <p class="card-text"><strong>Date:</strong> @product.Date.ToShortDateString()</p>
+                    </div>
+                  
+                  
+                  <div class="card-body">
+                        <h5 class="card-title">@product.ProductName</h5>
+                        <p class="card-text"><strong>Price:</strong> $@product.Price</p>
+                        <p class="card-text"><strong>Quantity:</strong> @product.Quantity</p>
+                        <p class="card-text"><strong>Size:</strong> @product.Size</p>
+                        <p class="card-text"><strong>Color:</strong> @product.Color</p>
+                        <p class="card-text"><strong>Date:</strong> @product.Date.ToShortDateString()</p>
+                    </div>
+                  
+                  
+                </div>
+            }
+        }
+        else
+        {
+            <p>No products to be delivered.</p>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿@page
+@model FANCY_CLOTHES_MANAGEMENT.Pages.CustomerListModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+            border-bottom: none;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .card-text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Customer List</h3>
+        <div class="card">
+            <div class="card-header">
+                Product Name
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text"><strong>Customer Name:</strong> John Doe</p>
+                <p class="card-text"><strong>Email:</strong> john.doe@example.com</p>
+                <p class="card-text"><strong>Address:</strong> 123 Main St, City, Country</p>
+                <p class="card-text"><strong>Phone:</strong> +1234567890</p>
+                <p class="card-text"><strong>Status:</strong> Purchasing</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Product Name
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Product Name</h5>
+                <p class="card-text"><strong>Customer Name:</strong> Jane Smith</p>
+                <p class="card-text"><strong>Email:</strong> jane.smith@example.com</p>
+                <p class="card-text"><strong>Address:</strong> 456 Elm St, City, Country</p>
+                <p class="card-text"><strong>Phone:</strong> +9876543210</p>
+                <p class="card-text"><strong>Status:</strong> Purchased</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

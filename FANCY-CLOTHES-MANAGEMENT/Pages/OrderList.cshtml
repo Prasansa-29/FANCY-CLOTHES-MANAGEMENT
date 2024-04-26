@@ -1,0 +1,86 @@
+﻿@page
+@model FANCY_CLOTHES_MANAGEMENT.Pages.OrderListModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+            border-bottom: none;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .card-text {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Order List</h2>
+        <div class="card">
+            <div class="card-header">
+                Order ID: 001
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Customer: John Doe</h5>
+                <p class="card-text"><strong>Product:</strong> Product Name</p>
+                <p class="card-text"><strong>Quantity:</strong> 2</p>
+                <p class="card-text"><strong>Status:</strong> Pending</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Order ID: 002
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Customer: Jane Smith</h5>
+                <p class="card-text"><strong>Product:</strong> Another Product Name</p>
+                <p class="card-text"><strong>Quantity:</strong> 1</p>
+                <p class="card-text"><strong>Status:</strong> Incomplete</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Order ID: 003
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Customer: Robert Johnson</h5>
+                <p class="card-text"><strong>Product:</strong> Yet Another Product Name</p>
+                <p class="card-text"><strong>Quantity:</strong> 3</p>
+                <p class="card-text"><strong>Status:</strong> Completed</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
